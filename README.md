@@ -3,11 +3,24 @@
 # 项目介绍
 
 此项目是通过使用开源项目[clash（已跑路）](https://github.com/Dreamacro/clash)作为核心程序，再结合脚本实现简单的代理功能。<br>
-clash核心备份仓库[Clash-backup](https://github.com/Elegybackup/clash-backup)
+clash核心备份仓库[Clash-backup](https://github.com/Elegycloud/clash-for-linux-backup)
 
 主要是为了解决我们在服务器上下载GitHub等一些国外资源速度慢的问题。
 
-由于作者已经跑路，当前为Elegycloud进行备份，若有侵犯您的权利，请提交issues我会看到并删除仓库<br>
+# 免责声明
+1.本项目使用GNU通用公共许可证（GPL）v3.0进行许可。您可以查看本仓库LICENSE进行了解
+
+2.本项目的原作者保留所有知识产权。作为使用者，您需遵守GPL v3.0的要求，并承担因使用本项目而产生的任何风险。
+
+3.本项目所提供的内容不提供任何明示或暗示的保证。在法律允许的范围内，原作者概不负责，不论是直接的、间接的、特殊的、偶然的或后果性的损害。
+
+3.本项目与仓库的创建者和维护者完全无关，仅作为备份仓库，任何因使用本项目而引起的纠纷、争议或损失，与仓库的作者和维护者完全无关。
+
+4.对于使用本项目所导致的任何纠纷或争议，使用者必须遵守自己国家的法律法规，并且需自行解决因使用本项目而产生的任何法律法规问题。
+
+# 题外话
+由于作者已经跑路，当前仓库仅进行备份，若有侵犯您的权利，请提交issues我会看到并删除仓库<br>
+
 clash for linux 备份(备份号：202311091510)。
 若喜欢本项目，请点个小星星！
 <br>
@@ -15,16 +28,18 @@ clash for linux 备份(备份号：202311091510)。
 # 使用须知
 
 - 运行本项目建议使用root用户，或者使用 sudo 提权。
-- 使用过程中如遇到问题，请优先查已有的 [issues](https://github.com/Elegybackup/clash-for-linux-backup/issues)。
+- 使用过程中如遇到问题，请优先查已有的 [issues](https://github.com/Elegycloud/clash-for-linux-backup/issues)。
 - 在进行issues提交前，请替换提交内容中是敏感信息（例如：订阅地址）。
 - 本项目是基于 [clash（已跑路）](https://github.com/Dreamacro/clash) 、[yacd](https://github.com/haishanh/yacd) 进行的配置整合，关于clash、yacd的详细配置请去原项目查看。
 - 此项目不提供任何订阅信息，请自行准备Clash订阅地址。
 - 运行前请手动更改`.env`文件中的`CLASH_URL`变量值，否则无法正常运行。
 - 当前在RHEL系列和Debian,Kali Linux,ubuntu以及Linux系统中测试过，其他系列可能需要适当修改脚本。
 - 支持 x86_64/aarch64 平台
-- 【注意：kali Linux需要在浏览器设置代理！否则有可能无法使用！】
-
-> **注意**：当你在使用此项目时，遇到任何无法独自解决的问题请优先前往 [Issues](https://github.com/wanhebin/clash-for-linux/issues) 寻找解决方法。由于空闲时间有限，后续将不再对Issues中 “已经解答”、“已有解决方案” 的问题进行重复性的回答。
+- 【注意：部分带有桌面端Linux系统的需要在浏览器设置代理！否则有可能无法使用！】
+- 【若系统代理无法使用，但是想要系统代理，请修改尝试修改start.sh中的端口后执行环境变量命令！】
+- 【还是无法使用请更换当前网络环境（也是其中一个因素！）】
+- 【谷歌，twitter，youtube等可能无法ping通，正常现象！】
+> **注意**：当你在使用此项目时，遇到任何无法独自解决的问题请优先前往 [Issues](https://github.com/Elegycloud/clash-for-linux-backup/issue) 寻找解决方法。由于空闲时间有限，后续将不再对Issues中 “已经解答”、“已有解决方案” 的问题进行重复性的回答。
 
 <br>
 
@@ -35,7 +50,7 @@ clash for linux 备份(备份号：202311091510)。
 下载项目
 
 ```bash
-$ git clone https://github.com/Elegybackup/clash-for-linux-backup.git
+$ git clone https://github.com/Elegycloud/clash-for-linux-backup.git
 ```
 
 进入到项目目录，编辑`.env`文件，修改变量`CLASH_URL`的值。
